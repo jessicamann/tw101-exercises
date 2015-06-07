@@ -10,6 +10,7 @@ public class Rectangle {
     }
 
     public int area(){
-        return -1;
+
+        return length*width;
     }
 }
