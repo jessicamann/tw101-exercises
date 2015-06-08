@@ -1,18 +1,18 @@
 package com.thoughtworks.tw101.exercises.exercise9;
 
-import java.util.List;
-
 public class Node {
-    private String name;
+    public String name;
+    public BinaryTree right;
+    public BinaryTree left;
 
     public Node(String name) {
         this.name = name;
     }
 
-    public void add(String nameOfNewNode) {
+    public boolean hasRightChild(){
+        return right!=null;
     }
-
-    public List<String> names() {
-        return null;
+    public boolean hasLeftChild(){
+        return left!=null;
     }
 }

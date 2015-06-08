@@ -8,20 +8,21 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        Node root = new Node("Cecil");
+        BinaryTree tree = new BinaryTree(new Node("Cecil"));
 
-        root.add("Michelle");
-        root.add("Bill");
-        root.add("Jagruti");
-        root.add("Tess");
-        root.add("Sue-Ellen");
-        root.add("Sara");
-        root.add("Casey");
+        tree.add(new Node("Michelle"));
+        tree.add(new Node("Bill"));
+        tree.add(new Node("Jagruti"));
+        tree.add(new Node("Tess"));
+        tree.add(new Node("Sue-Ellen"));
+        tree.add(new Node("Sara"));
+        tree.add(new Node("Casey"));
 
-        List<String> names = root.names();
+        List<String> names = tree.names();
 
         for (String name : names) {
             System.out.println(name);
         }
+
     }
 }
